@@ -1,0 +1,24 @@
+[Unit]
+Description=Camera Face Detection and Logging Service
+After=network.target
+
+[Service]
+# -- User and Permissions --
+User=orangepi
+Group=orangepi
+
+# -- Execution Details --
+WorkingDirectory=/home/orangepi/emb/proj
+ExecStart=/usr/bin/python3 /home/orangepi/emb/proj/monitor.py
+
+# -- Automatic Restart --
+Restart=on-failure
+# Wait 5 seconds before attempting to restart.
+RestartSec=5
+
+# -- Resource Limits --
+CPUQuota=80%
+MemoryMax=384M
+
+[Install]
+WantedBy=multi-user.target
