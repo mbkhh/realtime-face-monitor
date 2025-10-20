@@ -1,6 +1,6 @@
 # Real Time Face Monitor: Real-Time Face Detection & Monitoring System
 
-![Real Time Face Monitor Demo png](img/1.png)
+
 
 Real Time Face Monitor is a complete embedded surveillance and monitoring solution built on an Orange Pi. It captures and streams real-time video, performs on-device face detection using OpenCV, and logs every new face to a MySQL database. The entire system is managed through a sleek, real-time web dashboard that provides a live video feed, system health statistics, and remote configuration capabilities via a RESTful API.
 
